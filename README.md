@@ -8,7 +8,7 @@ You need an extra linux（centos 7 x64） server to be the man in the middle
 
 Server running command：
 ```bash
-yum install git;git clone https://github.com/LaoXianzzz/zz.git; chmod +x . /root/PUBG-Cloud-Radar/update.sh;. /root/PUBG-Cloud-Radar/update.sh
+yum install git;git clone https://github.com/LaoXianzzz/zz.git; chmod +x . /root/zz/update.sh;. /root/zz/update.sh
 ```
 
 ## Translation
