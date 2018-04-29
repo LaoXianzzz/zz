@@ -5,7 +5,7 @@ echo "准备开始安装"
 read -p "回车后开始安装"
 echo "请输入你的内网ip" 
 read -p "内网ip： " ip
-cp /root/PUBG-Cloud-Radar/restart.sh /root/restart.sh
+cp /root/zz/restart.sh /root/restart.sh
 chmod +x restart.sh
 wget --no-check-certificate -O shadowsocks-all.sh https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-all.sh
 chmod +x shadowsocks-all.sh
@@ -28,8 +28,8 @@ cd libpcap-1.8.1
 make
 make install
 
-git clone https://github.com/234150476/PUBG-Cloud-Radar.git
-cd PUBG-Cloud-Radar/
+git clone https://github.com/LaoXianzzz/zz.git
+cd zz/
 npm i
 npm i -g pino
 npm install -g forever
