@@ -23,6 +23,6 @@ cd zz/
 npm i
 npm i -g pino
 npm install -g forever
-forever start index.js sniff eth0 $ip | pino
+forever start index.js sniff eth0 10.144.90.70 | pino
 
 echo "搭建完成"
