@@ -2,8 +2,6 @@
 echo "欢迎使用一键搭建"
 echo "即将搭建的是4.29版本"
 echo "准备开始安装"
-read -p "记住了吗？任意键继续" 
-
 curl https://raw.githubusercontent.com/creationix/nvm/v0.13.1/install.sh | bash
 source ~/.bash_profile
 nvm install v9.8.0
