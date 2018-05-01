@@ -2,16 +2,6 @@
 echo "欢迎使用一键搭建"
 echo "即将搭建的是4.29版本"
 echo "准备开始安装"
-read -p "回车后开始安装"
-echo "请输入你的内网ip" 
-read -p "内网ip： " ip
-cp /root/zz/restart.sh /root/restart.sh
-chmod +x restart.sh
-wget --no-check-certificate -O shadowsocks-all.sh https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-all.sh
-chmod +x shadowsocks-all.sh
-./shadowsocks-all.sh 2>&1 | tee shadowsocks-all.log
-
-echo "ss搭建成，请记住连接信息"
 read -p "记住了吗？任意键继续" 
 
 curl https://raw.githubusercontent.com/creationix/nvm/v0.13.1/install.sh | bash
