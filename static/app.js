@@ -676,24 +676,6 @@ const renderMap = () => {
          [loc[0] + Math.cos(radianAngle) * 512, loc[1] - Math.sin(radianAngle) * 512]]
         )
       )
-    } else { // enemy
-      if (playerObj.team) {
-        label = `${playerObj.team}`
-      } else if (playerObj.name) {
-        label = playerObj.name
-      } else {
-        label = `<${playerObj.name}>`
-      }
-      if (playerObj.kills) {
-        label += ` |杀:${playerObj.kills}|`
-      }
-    }
-    if (playerObj.health != null) {
-      label += ` |血:${Math.floor(playerObj.health)}|`
-    }
-    feature.set('_label', label)
-    // re-add should be fine
-    playerSource.addFeature(feature)
   }
   // (2) get all the features in the layer, if they are not in showingPlayers, remove them
   for (const renderingFeature of playerSource.getFeatures()) {
